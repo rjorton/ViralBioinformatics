@@ -1,4 +1,4 @@
 # Viral Bioinformatics Course - Maribor, Slovenia 2022
 
-Test123
+TinyURL: [https://tinyurl.com/vbio2022](https://tinyurl.com/vbio2022)
 
