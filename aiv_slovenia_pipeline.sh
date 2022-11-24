@@ -8,7 +8,7 @@
 
 #Example usage
 #From within the ~/CourseData/AIV/U2008751/ directory:
-#bash d1.sh U2008751-n5_S4_L001_R1_001.fastq U2008751-n5_S4_L001_R2_001.fastq ~/CourseData/Refs/H4N6.fasta U2008751
+#bash aiv_slovenia_pipeline.sh U2008751-n5_S4_L001_R1_001.fastq U2008751-n5_S4_L001_R2_001.fastq ~/CourseData/Refs/H4N6.fasta U2008751
 #NB - do not enter the # symbol at the start - it is just used in this script to signify that line is a comment
 readFile1=${1}
 readFile2=${2}
