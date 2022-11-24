@@ -38,6 +38,14 @@ trim_galore -q 20 --length 50 --max_n 0 --paired ${readFile1} ${readFile2}
 trimFile1="${readFile1%.f*q}_val_1.fq"
 trimFile2="${readFile2%.f*q}_val_2.fq"
 
+#Run Kraken on the trimmed reads
+kraken2 -db ~/CourseData/Kraken/Viral --threads 4 --report ${name}_kraken_report.txt --output ${name}_kraken_output.txt --paired ${trimFile1} ${trimFile2}
+ktImportTaxonomy -q 2 -t 3 -s 4 ${name}_kraken_output.txt -o ${name}_krona.html
+
+#Run vapor on the trimmed reads - BUT - we are still using the ref seq the user supplied
+vapor.py -fq ${trimFile1} ${trimFile2} -fa ~/CourseData/Refs/HA_AIV_Europe.fasta > vapor_results_HA.txt
+vapor.py -fq ${trimFile1} ${trimFile2} -fa ~/CourseData/Refs/NA_AIV_Europe.fasta > vapor_results_NA.txt
+
 #bwa index the ref & then align the reads
 bwa index ${refFile}
 bwa mem -t 4 ${refFile} ${trimFile1} ${trimFile2} > ${name}.sam
