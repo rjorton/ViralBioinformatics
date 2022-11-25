@@ -68,11 +68,24 @@ On the VM iaea13 I did a quick vapor loop of each sample against the European Av
 bash vapor_loop.sh /data/iaea
 ```
 
+The original vapor commands:
+
+```
+vapor.py --return_best_n 100 -fq R1.fq R2.fq -fa ~/CourseData/Refs/HA_AIV_Europe.fasta > vapor_results_HA.txt
+vapor.py --return_best_n 100 -fq R1.fq R2.fq -fa ~/CourseData/Refs/NA_AIV_Europe.fasta > vapor_results_NA.txt
+```
+
 ## Kraken results
 
-On the VM iaea15 I did a quick kraken loop of each sample against the mini krakenDB:
+On the VM iaea15 I did a quick kraken loop of each sample against the krakne viral DB:
 
 ```
 bash kraken_loop.sh /data/iaea
 ```
+The original kraken commands:
 
+```
+kraken2 -db ~/CourseData/Kraken/Viral --threads 4 --report kraken_report.txt --output kraken_output.txt --paired R1.fq R2.fq
+
+ktImportTaxonomy -q 2 -t 3 -s 4 kraken_output.txt -o krona.html
+```
