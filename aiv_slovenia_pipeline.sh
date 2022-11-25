@@ -43,8 +43,8 @@ kraken2 -db ~/CourseData/Kraken/Viral --threads 4 --report ${name}_kraken_report
 ktImportTaxonomy -q 2 -t 3 -s 4 ${name}_kraken_output.txt -o ${name}_krona.html
 
 #Run vapor on the trimmed reads - BUT - we are still using the ref seq the user supplied
-vapor.py -fq ${trimFile1} ${trimFile2} -fa ~/CourseData/Refs/HA_AIV_Europe.fasta > vapor_results_HA.txt
-vapor.py -fq ${trimFile1} ${trimFile2} -fa ~/CourseData/Refs/NA_AIV_Europe.fasta > vapor_results_NA.txt
+vapor.py --return_best_n 100 -fq ${trimFile1} ${trimFile2} -fa ~/CourseData/Refs/HA_AIV_Europe.fasta > vapor_results_HA.txt
+vapor.py --return_best_n 100 -fq ${trimFile1} ${trimFile2} -fa ~/CourseData/Refs/NA_AIV_Europe.fasta > vapor_results_NA.txt
 
 #bwa index the ref & then align the reads
 bwa index ${refFile}
