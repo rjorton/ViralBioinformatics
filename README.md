@@ -12,7 +12,7 @@ Bash script of all the different steps we learnt pieced together. Example usage:
 Move into the sample folder:
 
 ```
-cd ~/CourseData/AIV/U2008751:
+cd ~/CourseData/AIV/U2008751
 ```
 
 Download the script:
