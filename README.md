@@ -1,8 +1,11 @@
-# Viral Bioinformatics Course - Maribor, Slovenia 2022
+# Regional Training Course on Next Generation Sequencing (NGS) using Illumina Platform
+## Maribor, Slovenia 2022
+
+[https://elixir.mf.uni-lj.si/enrol/index.php?id=99](https://elixir.mf.uni-lj.si/enrol/index.php?id=99)
+
+TinyURL for this GitHub page: [https://tinyurl.com/vbio2022](https://tinyurl.com/vbio2022)
 
 ## Command line bioinformatics script
-
-TinyURL for this page: [https://tinyurl.com/vbio2022](https://tinyurl.com/vbio2022)
 
 Bash script of all the different steps we learnt pieced together. Example usage:
 
@@ -63,5 +66,13 @@ On the VM iaea13 I did a quick vapor loop of each sample against the European Av
 
 ```
 bash vapor_loop.sh /data/iaea
+```
+
+## Kraken results
+
+On the VM iaea15 I did a quick kraken loop of each sample against the mini krakenDB:
+
+```
+bash kraken_loop.sh /data/iaea
 ```
 
