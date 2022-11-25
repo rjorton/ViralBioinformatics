@@ -118,8 +118,10 @@ Run this command to download this repo to get the script and H5N1 ref
 git clone https://github.com/rjorton/ViralBioinformatics.git
 ```
 
+Run the script with the H5N1 reference which was part of the download (downloaded into a folder caled ViralBioinformatics):
+
 ```
-bash aiv_slovenia_pipeline.sh sub_R1.fastq sub_R2.fastq ~/CourseData/Refs/H4N6.fasta OutputName
+bash ViralBioinformatics/aiv_slovenia_pipeline.sh sub_R1.fastq sub_R2.fastq ViralBioinformatics/H5N1.fasta OutputName
 ```
 
-You could try the H5N1 ref insread of H4N6
+You could try the H4N6 ref instead of H5N1
