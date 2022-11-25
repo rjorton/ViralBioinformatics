@@ -11,7 +11,7 @@ bash aiv_slovenia_pipeline.sh U2008751-n5_S4_L001_R1_001.fastq U2008751-n5_S4_L0
 To get the script
 
 ```
-wget https://github.com/rjorton/ViralBioinformatics/blob/main/aiv_slovenia_pipeline.sh
+wget https://raw.githubusercontent.com/rjorton/ViralBioinformatics/main/aiv_slovenia_pipeline.sh
 ```
 
 Or just copy and paste the text somewhere!
