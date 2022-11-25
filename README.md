@@ -1,20 +1,32 @@
 # Viral Bioinformatics Course - Maribor, Slovenia 2022
 
-TinyURL: [https://tinyurl.com/vbio2022](https://tinyurl.com/vbio2022)
+## Command line bioinformatics script
 
-Bash script of all the different steps we weren't pieced together
+TinyURL for this page: [https://tinyurl.com/vbio2022](https://tinyurl.com/vbio2022)
+
+Bash script of all the different steps we learnt pieced together. Example usage:
+
+Move into the sample folder:
 
 ```
-bash aiv_slovenia_pipeline.sh U2008751-n5_S4_L001_R1_001.fastq U2008751-n5_S4_L001_R2_001.fastq ~/CourseData/Refs/H4N6.fasta U2008751
+cd ~/CourseData/AIV/U2008751:
 ```
 
-To get the script (or just copy and paste the text somewhere!)
+Download the script:
 
 ```
 wget https://raw.githubusercontent.com/rjorton/ViralBioinformatics/main/aiv_slovenia_pipeline.sh
 ```
 
-The FASTQ reads of the samples you actually sequenced are in /data/iaea on the VMs:
+Run the script
+
+```
+bash aiv_slovenia_pipeline.sh U2008751-n5_S4_L001_R1_001.fastq U2008751-n5_S4_L001_R2_001.fastq ~/CourseData/Refs/H4N6.fasta U2008751
+```
+
+## Your sequence data
+
+The FASTQ reads of the samples you actually Illumina sequenced are in /data/iaea on the VMs:
 
 ```
 1260-7_S7_R1_001.fastq.gz        
@@ -45,8 +57,11 @@ Undetermined_S0_R1_001.fastq.gz
 5177-12_S12_R2_001.fastq.gz 
 ```
 
-On iaea13 I did a quick vapor loop of each sample against the European Avian IAV seqs
+## Vapor results
+
+On the VM iaea13 I did a quick vapor loop of each sample against the European Avian IAV HA and NA seqs:
 
 ```
 bash vapor_loop.sh /data/iaea
 ```
+
