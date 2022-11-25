@@ -89,3 +89,37 @@ kraken2 -db ~/CourseData/Kraken/Viral --threads 4 --report kraken_report.txt --o
 
 ktImportTaxonomy -q 2 -t 3 -s 4 kraken_output.txt -o krona.html
 ```
+
+## Own data analysis
+
+* Choose a sample within /data/iaea
+
+* Make a new directory in your home directory to work and cd into it
+
+* Copy the the sample's two .fastq.gz into your direcotry
+
+* gunzip the reads
+
+To speed things up we will SUBSAMPLE crudely selecting the first 8 million lines so 2 million reads.
+
+ADAPT THE BELOW COMMANDS - CHANGE your\_read\_file1.fastq and your\_read\_file2.fastq to whatever you read files are called
+
+```
+head -n8000000 your_read_file1.fastq > sub_R1.fastq
+```
+
+```
+head -n8000000 your_read_file2.fastq > sub_R2.fastq
+```
+
+Run this command to download this repo to get the script and H5N1 ref
+
+```
+git clone https://github.com/rjorton/ViralBioinformatics.git
+```
+
+```
+bash aiv_slovenia_pipeline.sh sub_R1.fastq sub_R2.fastq ~/CourseData/Refs/H4N6.fasta OutputName
+```
+
+You could try the H5N1 ref insread of H4N6

@@ -1,0 +1,184 @@
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: 1260-7_S7_R2_001.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.6.6
+Cutadapt version: 4.1
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Using Nextera adapter for trimming (count: 237). Second best hit was smallRNA (count: 0)
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 50 bp
+
+
+This is cutadapt 4.1 with Python 3.9.13
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA 1260-7_S7_R2_001.fastq
+Processing single-end reads on 1 core ...
+Finished in 100.07 s (8 µs/read; 7.83 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:              13,056,172
+Reads with adapters:                 2,327,584 (17.8%)
+Reads written (passing filters):    13,056,172 (100.0%)
+
+Total basepairs processed: 1,906,681,653 bp
+Quality-trimmed:               1,707,069 bp (0.1%)
+Total written (filtered):  1,901,699,312 bp (99.7%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 2327584 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.2%
+  C: 20.5%
+  G: 23.9%
+  T: 30.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	1720077	3264043.0	0	1720077
+2	448175	816010.8	0	448175
+3	136314	204002.7	0	136314
+4	11649	51000.7	0	11649
+5	5574	12750.2	0	5574
+6	770	3187.5	0	770
+7	105	796.9	0	105
+8	287	199.2	0	287
+9	41	49.8	0	15 26
+10	51	12.5	1	9 42
+11	48	3.1	1	7 41
+12	54	0.8	1	5 49
+13	56	0.8	1	10 46
+14	115	0.8	1	19 96
+15	71	0.8	1	24 47
+16	222	0.8	1	79 143
+17	198	0.8	1	45 153
+18	70	0.8	1	33 37
+19	79	0.8	1	39 40
+20	131	0.8	1	68 63
+21	129	0.8	1	38 91
+22	208	0.8	1	126 82
+23	230	0.8	1	55 175
+24	94	0.8	1	49 45
+25	69	0.8	1	34 35
+26	100	0.8	1	42 58
+27	77	0.8	1	31 46
+28	90	0.8	1	49 41
+29	99	0.8	1	52 47
+30	98	0.8	1	37 61
+31	85	0.8	1	48 37
+32	82	0.8	1	41 41
+33	95	0.8	1	45 50
+34	77	0.8	1	39 38
+35	95	0.8	1	59 36
+36	89	0.8	1	29 60
+37	123	0.8	1	97 26
+38	99	0.8	1	30 69
+39	47	0.8	1	27 20
+40	13	0.8	1	6 7
+41	25	0.8	1	16 9
+42	70	0.8	1	22 48
+43	61	0.8	1	30 31
+44	38	0.8	1	14 24
+45	69	0.8	1	37 32
+46	65	0.8	1	27 38
+47	46	0.8	1	25 21
+48	60	0.8	1	25 35
+49	47	0.8	1	21 26
+50	69	0.8	1	46 23
+51	50	0.8	1	14 36
+52	54	0.8	1	35 19
+53	27	0.8	1	8 19
+54	23	0.8	1	13 10
+55	32	0.8	1	17 15
+56	27	0.8	1	16 11
+57	21	0.8	1	14 7
+58	29	0.8	1	11 18
+59	32	0.8	1	16 16
+60	25	0.8	1	6 19
+61	34	0.8	1	19 15
+62	28	0.8	1	7 21
+63	19	0.8	1	9 10
+64	15	0.8	1	12 3
+65	22	0.8	1	7 15
+66	39	0.8	1	20 19
+67	29	0.8	1	23 6
+68	20	0.8	1	8 12
+69	14	0.8	1	8 6
+70	20	0.8	1	16 4
+71	23	0.8	1	17 6
+72	16	0.8	1	5 11
+73	17	0.8	1	9 8
+74	13	0.8	1	9 4
+75	23	0.8	1	17 6
+76	25	0.8	1	20 5
+77	12	0.8	1	5 7
+78	12	0.8	1	7 5
+79	11	0.8	1	7 4
+80	13	0.8	1	10 3
+81	13	0.8	1	7 6
+82	8	0.8	1	3 5
+83	10	0.8	1	5 5
+84	11	0.8	1	7 4
+85	7	0.8	1	6 1
+86	7	0.8	1	3 4
+87	8	0.8	1	4 4
+88	10	0.8	1	4 6
+89	9	0.8	1	8 1
+90	4	0.8	1	4
+91	11	0.8	1	7 4
+92	8	0.8	1	4 4
+93	5	0.8	1	3 2
+94	8	0.8	1	3 5
+95	6	0.8	1	4 2
+96	5	0.8	1	2 3
+97	3	0.8	1	0 3
+98	5	0.8	1	4 1
+99	3	0.8	1	2 1
+100	2	0.8	1	2
+101	7	0.8	1	4 3
+102	7	0.8	1	4 3
+103	8	0.8	1	6 2
+104	1	0.8	1	0 1
+105	9	0.8	1	6 3
+106	3	0.8	1	3
+107	6	0.8	1	3 3
+108	2	0.8	1	0 2
+109	4	0.8	1	1 3
+110	3	0.8	1	3
+111	6	0.8	1	4 2
+112	3	0.8	1	3
+113	1	0.8	1	1
+114	3	0.8	1	2 1
+115	2	0.8	1	1 1
+116	2	0.8	1	2
+117	1	0.8	1	1
+118	2	0.8	1	1 1
+122	1	0.8	1	1
+123	1	0.8	1	0 1
+127	2	0.8	1	0 2
+133	2	0.8	1	0 2
+136	1	0.8	1	0 1
+138	1	0.8	1	0 1
+142	1	0.8	1	0 1
+146	1	0.8	1	0 1
+
+RUN STATISTICS FOR INPUT FILE: 1260-7_S7_R2_001.fastq
+=============================================
+13056172 sequences processed in total
+
+Number of sequence pairs removed because at least one read contained more N(s) than the specified limit of 0: 0 (0.00%)
+Total number of sequences analysed for the sequence pair length validation: 13056172
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (50 bp): 30162 (0.23%)

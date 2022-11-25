@@ -1,0 +1,64 @@
+BASIC STATS FILE
+Read File 1 = 1260-7_S7_R1_001.fastq
+Read File 2 = 1260-7_S7_R2_001.fastq
+Ref File = /home/student/CourseData/Refs/H4N6.fasta
+Output name for SAM/BAM/Consensus etc = 1260-7
+PRINSEQ STATS
+stats_info	bases	1906787592
+stats_info	reads	13056172
+stats_info2	bases	1906681653
+stats_info2	reads	13056172
+stats_len	max	151
+stats_len	mean	146.04
+stats_len	median	151
+stats_len	min	35
+stats_len	mode	151
+stats_len	modeval	7655366
+stats_len	range	117
+stats_len	stddev	14.64
+stats_len2	max	151
+stats_len2	mean	146.04
+stats_len2	median	151
+stats_len2	min	35
+stats_len2	mode	151
+stats_len2	modeval	7610695
+stats_len2	range	117
+stats_len2	stddev	14.65
+stats_ns	maxn	35
+stats_ns	maxp	100
+stats_ns	seqswithn	2241
+stats_ns2	maxn	35
+stats_ns2	maxp	100
+stats_ns2	seqswithn	2240
+Number of mapped reads in 1260-7.bam
+25879634
+Number of unmapped reads in 1260-7.bam
+172386
+samtools idxstats in 1260-7.bam
+PB2	2341	2698108	5847
+PB1	2341	1764829	2630
+PA	2233	4228474	4355
+HA	1738	2182562	3082
+NP	1565	3498992	3781
+NA	1464	3571202	3461
+MP	1027	3599906	2625
+NS	890	4518546	2859
+*	0	0	143746
+Ref_Name	%_Covered	Avg_Depth
+PB2	100.00	162952.63
+PB1	100.00	105730.12
+PA	100.00	268926.30
+HA	100.00	181740.59
+NP	100.00	325704.92
+NA	100.00	354078.32
+MP	100.00	509416.50
+NS	100.00	738522.44
+ivar creating consensus for PB2
+ivar creating consensus for PB1
+ivar creating consensus for PA
+ivar creating consensus for HA
+ivar creating consensus for NP
+ivar creating consensus for NA
+ivar creating consensus for MP
+ivar creating consensus for NS
+Finished
