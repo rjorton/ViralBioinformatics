@@ -31,6 +31,8 @@ bash aiv_slovenia_pipeline.sh U2008751-n5_S4_L001_R1_001.fastq U2008751-n5_S4_L0
 
 The FASTQ reads of the samples you actually Illumina sequenced are in /data/iaea on the VMs:
 
+**NB:** The sample number is indicated by the 'S' number so the first sample 1260-7_S7_R1_001.fastq.gz is sample 7 (\_S7\_), so you should find whatever sample you processed in the lab
+
 ```
 1260-7_S7_R1_001.fastq.gz        
 1260-7_S7_R2_001.fastq.gz   
